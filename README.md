@@ -102,7 +102,7 @@
   </header>
 
   <!-- 🖼 Replace this link with your uploaded GitHub image link -->
-  <img src="https://raw.githubusercontent.com/xyz/xyz.github.io/main/https://raw.githubusercontent.com/AzmiraKhanam/AzmiraKhanam/refs/heads/main/formal%20photo.jpg" alt="Azmira Khanam">
+  <img src="https://raw.githubusercontent.com/xyz/xyz.github.io/main/https://github.com/AzmiraKhanam/AzmiraKhanam/blob/267831ffb39c398b670f0256036388a3416662fa/formal%20photo.jpg" alt="Azmira Khanam">
 
   <section>
     <h2>About Me</h2>
