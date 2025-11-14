@@ -2,7 +2,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azmira Khanam | Portfolio</title>
 
   <style>
     body {
@@ -86,6 +85,32 @@
       background-color: #003366;
     }
 
+    /* Contact form styles */
+    form.contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      align-items: start;
+      margin-top: 20px;
+    }
+
+    .contact-form .full { grid-column: 1 / -1; }
+
+    label { display: block; font-size: 14px; margin-bottom: 6px; color: #111; }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px;
+      font-size: 15px; box-sizing: border-box;
+    }
+    textarea { min-height: 100px; resize: vertical; }
+
+    .btn-submit {
+      grid-column: 1 / -1;
+      display: inline-block; padding: 12px 20px; background: #1f4e8c; color: #fff;
+      border: none; border-radius: 10px; font-weight: 700; cursor: pointer;
+      text-align: center;
+    }
+    .btn-submit:hover { background: #003366; transition: 0.2s; }
+
     footer {
       margin-top: 50px;
       background: #1f4e8c;
@@ -99,9 +124,14 @@
       font-size: 14px;
       margin: 5px 0;
     }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      form.contact-form { grid-template-columns: 1fr; }
+    }
+
   </style>
 </head>
-
 
 <body>
 
@@ -110,9 +140,7 @@
     <p>Computer Engineering Student | Educator | Ex–Deputy Chief (Training), Red Crescent Youth CTG</p>
   </header>
 
-  <!-- 🖼 Replace with your own GitHub-hosted image link -->
   <img src="https://raw.githubusercontent.com/AzmiraKhanam/AzmiraKhanam/refs/heads/main/formal%20photo.jpg" alt="Azmira Khanam">
-
 
   <section>
     <h2>About Me</h2>
@@ -125,7 +153,6 @@
     </p>
   </section>
 
-
   <section>
     <h2>Quick Bio</h2>
     <ul>
@@ -136,7 +163,6 @@
       <li>🌍 Interested in AI, Cloud Computing & Machine Learning</li>
     </ul>
   </section>
-
 
   <section>
     <h2>Skills</h2>
@@ -149,36 +175,55 @@
     </ul>
   </section>
 
-
   <section>
     <h2>Projects</h2>
 
     <h3>1. Student Attendance Management System (Web-Based)</h3>
-    <p>
-      A Django-based system that helps teachers manage student attendance digitally with accuracy.
-    </p>
+    <p>A Django-based system that helps teachers manage student attendance digitally with accuracy.</p>
     <a href="#" class="project-btn" target="_blank">🔗 View Project</a>
 
     <br><br>
 
     <h3>2. Personal Portfolio Website</h3>
-    <p>
-      This website is built and hosted using GitHub Pages. Fully responsive with a modern UI.
-    </p>
+    <p>This website is built and hosted using GitHub Pages. Fully responsive with a modern UI.</p>
     <a href="#" class="project-btn" target="_blank">🔗 Live Portfolio</a>
 
   </section>
 
-
   <section>
     <h2>Get In Touch</h2>
-    <p>📞 <strong>Mobile:</strong> <a href="tel:+8801XXXXXXXXX">+8801537690455</a></p>
+    <p>📞 <strong>Mobile:</strong> <a href="tel:+8801537690455">+8801537690455</a></p>
     <p>📧 <strong>Email:</strong> <a href="mailto:azmirauctc@gmail.com">azmirauctc@gmail.com</a></p>
     <p>🌐 <strong>Facebook:</strong> <a href="https://www.facebook.com/share/19z165VkEb/" target="_blank">Facebook Profile</a></p>
     <p>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/azmirakhanam.info" target="_blank">Instagram Profile</a></p>
-    <p>💻 <strong>GitHub:</strong> <a href="https://github.com/xyz" target="_blank">github.com/AzmiraKhanam</a></p>
-  </section>
+    <p>💻 <strong>GitHub:</strong> <a href="https://github.com/AzmiraKhanam" target="_blank">github.com/AzmiraKhanam</a></p>
 
+    <!-- Formspree Contact Form -->
+    <form class="contact-form" action="https://formspree.io/f/mrgrwqzd" method="POST">
+      <div>
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required>
+      </div>
+
+      <div>
+        <label for="phone">Mobile</label>
+        <input id="phone" name="phone" type="text" placeholder="+8801XXXXXXXXX" required>
+      </div>
+
+      <div class="full">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="full">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+    <p style="font-size:13px; color:#666; margin-top:8px;">Form powered by Formspree (direct email delivery)</p>
+  </section>
 
   <footer>
     <p>© 2025 Azmira Khanam | All Rights Reserved</p>
