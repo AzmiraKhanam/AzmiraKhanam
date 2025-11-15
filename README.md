@@ -160,6 +160,12 @@
     </p>
   </section>
 
+  <!-- QUICK BIO SECTION -->
+  <section id="quickbio">
+    <h2>Quick Bio</h2>
+    <p>I’m Azmira Khanam — a passionate learner, educator, and tech enthusiast. I love creating simple content that helps students understand complex topics easily. My goal is to build meaningful digital learning resources and inspire others through technology and teaching.</p>
+  </section>
+
   <section id="skills">
     <h2>Skills</h2>
     <ul>
@@ -201,6 +207,17 @@
     <p><strong>GitHub:</strong> <br> <a href="https://github.com/AzmiraKhanam" target="_blank">github.com/AzmiraKhanam</a></p>
   </div>
 </div>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <form class="contact-form" style="display:flex; flex-direction:column; gap:12px; max-width:500px;">
+    <input type="text" placeholder="Your Name" required style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+    <input type="email" placeholder="Your Email" required style="padding:10px; border-radius:8px; border:1px solid #ccc;">
+    <textarea rows="4" placeholder="Your Message" style="padding:10px; border-radius:8px; border:1px solid #ccc;"></textarea>
+    <button type="submit" style="padding:10px; background:#0055b3; color:white; border:none; border-radius:8px; font-size:16px; cursor:pointer;">Send Message</button>
+  </form>
+</section>
 
   </div>  <footer>
     © 2025 Azmira Khanam | All Rights Reserved
